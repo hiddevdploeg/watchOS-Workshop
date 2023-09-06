@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80FE83E72AA87AFF00EED820 /* GoHeart Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 80FE83E62AA87AFF00EED820 /* GoHeart Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80FE83EC2AA87AFF00EED820 /* GoHeartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE83EB2AA87AFF00EED820 /* GoHeartApp.swift */; };
+		80FE83EE2AA87AFF00EED820 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE83ED2AA87AFF00EED820 /* ContentView.swift */; };
+		80FE83F02AA87B0000EED820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FE83EF2AA87B0000EED820 /* Assets.xcassets */; };
+		80FE83F32AA87B0000EED820 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FE83F22AA87B0000EED820 /* Preview Assets.xcassets */; };
+		80FE84032AA87B3100EED820 /* HeartrateFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE83FE2AA87B3100EED820 /* HeartrateFetcher.swift */; };
+		80FE84042AA87B3100EED820 /* HeartValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE83FF2AA87B3100EED820 /* HeartValueView.swift */; };
+		80FE84052AA87B3100EED820 /* ListDemoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE84002AA87B3100EED820 /* ListDemoDetailsView.swift */; };
+		80FE84062AA87B3100EED820 /* ListDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE84012AA87B3100EED820 /* ListDemoView.swift */; };
+		80FE84072AA87B3100EED820 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE84022AA87B3100EED820 /* ValueView.swift */; };
+		80FE84102AA87D5500EED820 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE840F2AA87D5500EED820 /* WidgetKit.framework */; };
+		80FE84122AA87D5500EED820 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FE84112AA87D5500EED820 /* SwiftUI.framework */; };
+		80FE84152AA87D5500EED820 /* GoHeart_Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE84142AA87D5500EED820 /* GoHeart_Widgets.swift */; };
+		80FE84172AA87D5500EED820 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE84162AA87D5500EED820 /* AppIntent.swift */; };
+		80FE84192AA87D5600EED820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FE84182AA87D5600EED820 /* Assets.xcassets */; };
+		80FE841D2AA87D5600EED820 /* GoHeart WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 80FE840D2AA87D5500EED820 /* GoHeart WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80FE83E82AA87AFF00EED820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FE83DA2AA87AFF00EED820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80FE83E52AA87AFF00EED820;
+			remoteInfo = "GoHeart Watch App";
+		};
+		80FE841B2AA87D5600EED820 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FE83DA2AA87AFF00EED820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80FE840C2AA87D5500EED820;
+			remoteInfo = "GoHeart WidgetsExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80FE83F92AA87B0000EED820 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				80FE83E72AA87AFF00EED820 /* GoHeart Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FE84212AA87D5600EED820 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80FE841D2AA87D5600EED820 /* GoHeart WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		80FE83E02AA87AFF00EED820 /* GoHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FE83E62AA87AFF00EED820 /* GoHeart Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoHeart Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FE83EB2AA87AFF00EED820 /* GoHeartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoHeartApp.swift; sourceTree = "<group>"; };
+		80FE83ED2AA87AFF00EED820 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80FE83EF2AA87B0000EED820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80FE83F22AA87B0000EED820 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80FE83FE2AA87B3100EED820 /* HeartrateFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartrateFetcher.swift; sourceTree = "<group>"; };
+		80FE83FF2AA87B3100EED820 /* HeartValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartValueView.swift; sourceTree = "<group>"; };
+		80FE84002AA87B3100EED820 /* ListDemoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDemoDetailsView.swift; sourceTree = "<group>"; };
+		80FE84012AA87B3100EED820 /* ListDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDemoView.swift; sourceTree = "<group>"; };
+		80FE84022AA87B3100EED820 /* ValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
+		80FE84082AA87B4A00EED820 /* GoHeart Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GoHeart Watch App.entitlements"; sourceTree = "<group>"; };
+		80FE840D2AA87D5500EED820 /* GoHeart WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GoHeart WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FE840F2AA87D5500EED820 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		80FE84112AA87D5500EED820 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		80FE84142AA87D5500EED820 /* GoHeart_Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoHeart_Widgets.swift; sourceTree = "<group>"; };
+		80FE84162AA87D5500EED820 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		80FE84182AA87D5600EED820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80FE841A2AA87D5600EED820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80FE83E32AA87AFF00EED820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FE840A2AA87D5500EED820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FE84122AA87D5500EED820 /* SwiftUI.framework in Frameworks */,
+				80FE84102AA87D5500EED820 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80FE83D92AA87AFF00EED820 = {
+			isa = PBXGroup;
+			children = (
+				80FE83EA2AA87AFF00EED820 /* GoHeart Watch App */,
+				80FE84132AA87D5500EED820 /* GoHeart Widgets */,
+				80FE840E2AA87D5500EED820 /* Frameworks */,
+				80FE83E12AA87AFF00EED820 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80FE83E12AA87AFF00EED820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80FE83E02AA87AFF00EED820 /* GoHeart.app */,
+				80FE83E62AA87AFF00EED820 /* GoHeart Watch App.app */,
+				80FE840D2AA87D5500EED820 /* GoHeart WidgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80FE83EA2AA87AFF00EED820 /* GoHeart Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				80FE84082AA87B4A00EED820 /* GoHeart Watch App.entitlements */,
+				80FE83FD2AA87B3100EED820 /* Views */,
+				80FE83FE2AA87B3100EED820 /* HeartrateFetcher.swift */,
+				80FE83EB2AA87AFF00EED820 /* GoHeartApp.swift */,
+				80FE83ED2AA87AFF00EED820 /* ContentView.swift */,
+				80FE83EF2AA87B0000EED820 /* Assets.xcassets */,
+				80FE83F12AA87B0000EED820 /* Preview Content */,
+			);
+			path = "GoHeart Watch App";
+			sourceTree = "<group>";
+		};
+		80FE83F12AA87B0000EED820 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				80FE83F22AA87B0000EED820 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80FE83FD2AA87B3100EED820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80FE83FF2AA87B3100EED820 /* HeartValueView.swift */,
+				80FE84002AA87B3100EED820 /* ListDemoDetailsView.swift */,
+				80FE84012AA87B3100EED820 /* ListDemoView.swift */,
+				80FE84022AA87B3100EED820 /* ValueView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80FE840E2AA87D5500EED820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80FE840F2AA87D5500EED820 /* WidgetKit.framework */,
+				80FE84112AA87D5500EED820 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80FE84132AA87D5500EED820 /* GoHeart Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				80FE84142AA87D5500EED820 /* GoHeart_Widgets.swift */,
+				80FE84162AA87D5500EED820 /* AppIntent.swift */,
+				80FE84182AA87D5600EED820 /* Assets.xcassets */,
+				80FE841A2AA87D5600EED820 /* Info.plist */,
+			);
+			path = "GoHeart Widgets";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80FE83DF2AA87AFF00EED820 /* GoHeart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FE83FA2AA87B0000EED820 /* Build configuration list for PBXNativeTarget "GoHeart" */;
+			buildPhases = (
+				80FE83DE2AA87AFF00EED820 /* Resources */,
+				80FE83F92AA87B0000EED820 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80FE83E92AA87AFF00EED820 /* PBXTargetDependency */,
+			);
+			name = GoHeart;
+			productName = GoHeart;
+			productReference = 80FE83E02AA87AFF00EED820 /* GoHeart.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		80FE83E52AA87AFF00EED820 /* GoHeart Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FE83F62AA87B0000EED820 /* Build configuration list for PBXNativeTarget "GoHeart Watch App" */;
+			buildPhases = (
+				80FE83E22AA87AFF00EED820 /* Sources */,
+				80FE83E32AA87AFF00EED820 /* Frameworks */,
+				80FE83E42AA87AFF00EED820 /* Resources */,
+				80FE84212AA87D5600EED820 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80FE841C2AA87D5600EED820 /* PBXTargetDependency */,
+			);
+			name = "GoHeart Watch App";
+			productName = "GoHeart Watch App";
+			productReference = 80FE83E62AA87AFF00EED820 /* GoHeart Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80FE840C2AA87D5500EED820 /* GoHeart WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FE841E2AA87D5600EED820 /* Build configuration list for PBXNativeTarget "GoHeart WidgetsExtension" */;
+			buildPhases = (
+				80FE84092AA87D5500EED820 /* Sources */,
+				80FE840A2AA87D5500EED820 /* Frameworks */,
+				80FE840B2AA87D5500EED820 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoHeart WidgetsExtension";
+			productName = "GoHeart WidgetsExtension";
+			productReference = 80FE840D2AA87D5500EED820 /* GoHeart WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80FE83DA2AA87AFF00EED820 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					80FE83DF2AA87AFF00EED820 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					80FE83E52AA87AFF00EED820 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					80FE840C2AA87D5500EED820 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 80FE83DD2AA87AFF00EED820 /* Build configuration list for PBXProject "GoHeart" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80FE83D92AA87AFF00EED820;
+			productRefGroup = 80FE83E12AA87AFF00EED820 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80FE83DF2AA87AFF00EED820 /* GoHeart */,
+				80FE83E52AA87AFF00EED820 /* GoHeart Watch App */,
+				80FE840C2AA87D5500EED820 /* GoHeart WidgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80FE83DE2AA87AFF00EED820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FE83E42AA87AFF00EED820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FE83F32AA87B0000EED820 /* Preview Assets.xcassets in Resources */,
+				80FE83F02AA87B0000EED820 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FE840B2AA87D5500EED820 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FE84192AA87D5600EED820 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80FE83E22AA87AFF00EED820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FE84032AA87B3100EED820 /* HeartrateFetcher.swift in Sources */,
+				80FE83EE2AA87AFF00EED820 /* ContentView.swift in Sources */,
+				80FE83EC2AA87AFF00EED820 /* GoHeartApp.swift in Sources */,
+				80FE84062AA87B3100EED820 /* ListDemoView.swift in Sources */,
+				80FE84072AA87B3100EED820 /* ValueView.swift in Sources */,
+				80FE84052AA87B3100EED820 /* ListDemoDetailsView.swift in Sources */,
+				80FE84042AA87B3100EED820 /* HeartValueView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FE84092AA87D5500EED820 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FE84152AA87D5500EED820 /* GoHeart_Widgets.swift in Sources */,
+				80FE84172AA87D5500EED820 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80FE83E92AA87AFF00EED820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80FE83E52AA87AFF00EED820 /* GoHeart Watch App */;
+			targetProxy = 80FE83E82AA87AFF00EED820 /* PBXContainerItemProxy */;
+		};
+		80FE841C2AA87D5600EED820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80FE840C2AA87D5500EED820 /* GoHeart WidgetsExtension */;
+			targetProxy = 80FE841B2AA87D5600EED820 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		80FE83F42AA87B0000EED820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80FE83F52AA87B0000EED820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		80FE83F72AA87B0000EED820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GoHeart Watch App/GoHeart Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoHeart Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GoHeart;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Showing the HeartRate";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modumhq.GoHeart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		80FE83F82AA87B0000EED820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GoHeart Watch App/GoHeart Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoHeart Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GoHeart;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Showing the HeartRate";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modumhq.GoHeart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		80FE83FB2AA87B0000EED820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_KEY_CFBundleDisplayName = GoHeart;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modumhq.GoHeart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		80FE83FC2AA87B0000EED820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_KEY_CFBundleDisplayName = GoHeart;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modumhq.GoHeart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80FE841F2AA87D5600EED820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoHeart Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GoHeart Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.modumhq.GoHeart.watchkitapp.GoHeart-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		80FE84202AA87D5600EED820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoHeart Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GoHeart Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.modumhq.GoHeart.watchkitapp.GoHeart-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80FE83DD2AA87AFF00EED820 /* Build configuration list for PBXProject "GoHeart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FE83F42AA87B0000EED820 /* Debug */,
+				80FE83F52AA87B0000EED820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80FE83F62AA87B0000EED820 /* Build configuration list for PBXNativeTarget "GoHeart Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FE83F72AA87B0000EED820 /* Debug */,
+				80FE83F82AA87B0000EED820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80FE83FA2AA87B0000EED820 /* Build configuration list for PBXNativeTarget "GoHeart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FE83FB2AA87B0000EED820 /* Debug */,
+				80FE83FC2AA87B0000EED820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80FE841E2AA87D5600EED820 /* Build configuration list for PBXNativeTarget "GoHeart WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FE841F2AA87D5600EED820 /* Debug */,
+				80FE84202AA87D5600EED820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80FE83DA2AA87AFF00EED820 /* Project object */;
+}
